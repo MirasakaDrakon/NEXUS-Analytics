@@ -1,0 +1,133 @@
+# Security Policy
+
+## ⚠ IMPORTANT SECURITY NOTICE
+
+THIS SOFTWARE BINDS TO `0.0.0.0` BY DEFAULT  
+AND OPENS ACCESS ON ALL NETWORK INTERFACES.
+
+IMPROPER CONFIGURATION, PORT FORWARDING,  
+OR EXPOSURE TO UNTRUSTED NETWORKS  
+MAY RESULT IN:
+
+- REMOTE CODE EXECUTION (RCE)
+- DATA LEAKS
+- UNAUTHORIZED ACCESS
+- FULL SYSTEM COMPROMISE
+
+USE THIS SOFTWARE **ONLY IN TRUSTED ENVIRONMENTS**.
+
+BY USING THIS SOFTWARE, YOU ACKNOWLEDGE AND ACCEPT ALL RISKS.
+
+---
+
+## 🧠 Threat Model
+
+This project is a **network-facing administrative tool** intended for:
+
+- Local networks
+- Trusted environments
+- Educational, research, and infrastructure diagnostics
+- Explicitly authorized systems
+
+It is **NOT designed** to be exposed directly to the public internet without
+proper isolation, authentication, firewalling, or sandboxing.
+
+---
+
+## 🔐 Security Responsibilities
+
+### User Responsibilities
+
+The user is solely responsible for:
+
+- Network exposure
+- Firewall configuration
+- Access control
+- Port forwarding
+- Reverse proxies
+- VPN or tunneling setup
+- Running the software in isolated environments (VM, container, sandbox)
+
+Failure to follow secure deployment practices may result in system compromise.
+
+---
+
+## 🚫 What This Software Is NOT
+
+This project is **NOT**:
+
+- An exploit kit
+- A malware framework
+- An automatic fingerprinting system
+- A surveillance or tracking system
+- A tool for unauthorized access
+- A vulnerability scanner targeting third parties without permission
+
+All actions performed by the software are **explicitly initiated by the user**.
+
+---
+
+## 🧩 Legal & Ethical Use
+
+You MUST have **explicit authorization** to scan or interact with any system
+that is not owned or administrated by you.
+
+Unauthorized scanning, probing, or access **may be illegal** in your jurisdiction.
+
+The author does **NOT** encourage or support illegal activity.
+
+---
+
+## 🛡 Disclaimer of Warranty
+
+THIS SOFTWARE IS PROVIDED **"AS IS"**, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+
+- MERCHANTABILITY
+- FITNESS FOR A PARTICULAR PURPOSE
+- SECURITY
+- NON-INFRINGEMENT
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
+ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+---
+
+## 📢 Vulnerability Reporting
+
+If you discover a **security vulnerability in the source code itself**:
+
+- Open a GitHub Issue **without proof-of-concept exploits**, OR
+- Contact the maintainer privately (if contact info is provided)
+
+DO NOT publicly disclose vulnerabilities without coordination.
+
+---
+
+## 🧪 Security Recommendations
+
+- Bind to `127.0.0.1` if remote access is not required
+- Use firewall rules (iptables / nftables)
+- Avoid exposing ports directly to the internet
+- Use VPN for remote access
+- Run as a non-root user
+- Use containers or virtual machines where possible
+
+---
+
+## 🧾 License Notice
+
+This project is licensed under **GNU GPL v3**.
+
+Use of this software constitutes acceptance of:
+- This Security Policy
+- The License Terms
+- Full responsibility for deployment and usage
+
+---
+
+## ✅ Final Note
+
+IF YOU DO NOT UNDERSTAND THE RISKS —  
+**DO NOT USE THIS SOFTWARE.**

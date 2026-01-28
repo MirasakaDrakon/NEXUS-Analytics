@@ -1,5 +1,4 @@
 # NEXUS-Analytics
-🚀 NEXUS Analytics
 NEXUS Analytics is a self-hosted, zero-trust analytics and network diagnostics platform designed for developers, small businesses, and infrastructure enthusiasts.
 It provides real-time technical insights into traffic, devices, and network characteristics — while remaining lightweight, transparent, and fully under your control.
 

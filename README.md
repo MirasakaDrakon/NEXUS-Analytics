@@ -25,15 +25,22 @@ Multi-source IP intelligence via public legal APIs
 # ✨ Key Features
 
 📊 Live Dashboard – traffic charts, countries, online users
+
 🌍 Geographic Visualization – map-based session overview
+
 🖥 Technical Metrics – platform, CPU cores, RAM class, screen, GPU renderer
+
 🌐 Network Diagnostics – connection type, RTT, bandwidth hints
+
 🔎 IP Intelligence Scanner – aggregates results from multiple public OSINT APIs
+
 ⚡ Lightweight – runs even on low-power devices
+
 🧩 Modular – services separated for scalability
+
 🔐 Zero-Trust Architecture – fully self-hosted, no external storage
-🧾 Open Source (GPLv3) – auditable and extensible
-🛡 Privacy & Ethics
+
+# 🛡 Privacy & Ethics
 NEXUS Analytics is designed for technical analytics, not surveillance.
 The system does NOT:
 Identify individuals
@@ -41,32 +48,38 @@ Bypass security
 Track users across websites
 Perform exploitation
 All data is limited to technical session-level diagnostics and public IP intelligence from legal sources.
-🎯 Intended Use
+
+# 🎯 Intended Use
 Website traffic diagnostics
 Infrastructure monitoring
 Network performance analysis
 Educational OSINT research
 Developer observability tools
-🖥 System Requirements
+
+# 🖥 System Requirements
 Dependencies (Linux):
 
 apt install python3 tmux cloudflared
 
 Python packages:
 pip install -r requirements.txt
-▶️ Quick Start
+
+# ▶️ Quick Start
 
 git clone https://github.com/MirasakaDrakon/NEXUS-Analytics
 cd NEXUS-Analytics
 bash start.sh
+
 After launch:
 Dashboard → http://localhost:3334
 IP Scanner → http://localhost:3335
-🏗 Architecture
+
+# 🏗 Architecture
 NEXUS uses a microservice model:
 Separate services = better isolation
 Low resource footprint
 Can be deployed locally or behind tunnels (Cloudflare, etc.)
-📜 License
+
+# 📜 License
 GNU GPL v3
 You are free to modify, study, and distribute — improvements must remain open.

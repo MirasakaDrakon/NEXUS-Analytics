@@ -189,20 +189,20 @@ HTML = """
 </div>
 
 <div class="box">
-    <p>👥 Всего визитов: <b id="total">0</b></p>
-    <p>🟢 Онлайн (60 сек): <b id="online">0</b></p>
+    <p>👥 Visits: <b id="total">0</b></p>
+    <p>🟢 Online (60 sec): <b id="online">0</b></p>
     <button id="scannerBtn" class="btn" class="btn">
         🛰 IP Scanner
     </button>
 </div>
 
 <div class="box">
-    <h3>Визиты по минутам</h3>
+    <h3>Visits per minute</h3>
     <canvas id="visits"></canvas>
 </div>
 
 <div class="box">
-    <h3>Страны</h3>
+    <h3>Countries</h3>
     <canvas id="countries"></canvas>
 </div>
 
@@ -254,7 +254,7 @@ soundBtn.onclick = () => {
             soundEnabled = true;
             soundBtn.textContent = "🔊";
             soundBtn.style.background = "#58a6ff";
-        }).catch(e => console.log("[AUDIO] блокировано", e));
+        }).catch(e => console.log("[AUDIO] blocked", e));
     } else {
         soundEnabled = !soundEnabled;
         soundBtn.textContent = soundEnabled ? "🔊" : "🔇";
@@ -290,7 +290,7 @@ async function fetchIPInfo(ip){
         let r = await fetch(`/ipinfo/${ip}`);
         return await r.json();
     } catch(e){
-        return {"error":"Не удалось получить данные"};
+        return {"error":"Unable to fetch data"};
     }
 }
 
@@ -355,7 +355,6 @@ async function updateMap(coords){
             }
         }
 
-        // ТВОЙ оригинальный попап, не трогаем содержимое
         marker.bindPopup(`
             <b>IP:</b> ${c.ip}<br>
             <b>Country:</b> ${c.country || '-'}<br>
